@@ -1,0 +1,63 @@
+/* FONTS */
+@font-face {
+    font-family: 'SoberanaSans'; /*a name to be used later*/
+    src: url(fonts/SoberanaSans-Regular.otf); /*URL to font*/
+}
+
+body {
+/*	background: #f9faff url("imagenes/background.jpg") no-repeat fixed center top;*/
+	color:#2F2F2F;
+	margin:0;
+	font: 1em Arial;
+}
+
+#cuerpo_principal {
+	width: 61em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+}
+
+#cuerpo {
+    padding:2em;
+    border-radius: 2em;
+    width: 61em;
+    margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	background: #f3f3f3;
+    
+}
+
+#cuerpo p {
+    color:#000000;
+    font: 12;
+    font-family:SoberanaSans;
+}
+
+#cuerpo h1 {
+    color: #007229;
+    border-color: #C10435;
+    border-bottom: 1em;
+}
+
+#cuerpo hr {
+    border:none;
+    height:2em;
+}
+
+#encabezado{
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #dedde0;
+    height: 4em;
+    background: url(imagenes/sepban.jpg) center;
+}
+
+#pie {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #dedde0;
+    height: 8em;
+    background: url(imagenes/pie.jpg) center;
+}
