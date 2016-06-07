@@ -4,13 +4,6 @@
     src: url(fonts/SoberanaSans-Regular.otf); /*URL to font*/
 }
 
-body {
-/*	background: #f9faff url("imagenes/background.jpg") no-repeat fixed center top;*/
-	color:#2F2F2F;
-	margin:0;
-	font: 1em Arial;
-}
-
 #cuerpo_principal {
 	width: 61em;
 	margin-right: auto;
@@ -19,7 +12,10 @@ body {
 }
 
 #cuerpo {
-    padding:2em;
+    padding-top:1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
     border-radius: 2em;
     width: 61em;
     margin-right: auto;
@@ -30,15 +26,20 @@ body {
 }
 
 #cuerpo p {
+    text-align: justify;
+    text-justify: auto;
+    margin: 1em;
     color:#000000;
     font: 12;
     font-family:SoberanaSans;
 }
 
 #cuerpo h1 {
+    padding-right: auto;
+    width: 30%;
     color: #007229;
     border-color: #C10435;
-    border-bottom: 1em;
+    border-bottom: solid 2px #C10435 ;
 }
 
 #cuerpo hr {
@@ -47,10 +48,10 @@ body {
 }
 
 #encabezado{
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: auto;
     background-color: #dedde0;
     height: 4em;
+    margin-bottom: 2em;
     background: url(imagenes/sepban.jpg) center;
 }
 
