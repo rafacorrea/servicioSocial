@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: 'SoberanaSans'; /*a name to be used later*/
-    src: url(fonts/SoberanaSans-Regular.otf); /*URL to font*/
+    font-family: 'SoberanaTitular'; /*a name to be used later*/
+    src: url(fonts/SoberanaTitular-Bold.otf); /*URL to font*/
 }
 
 
@@ -46,6 +46,7 @@
     color: #007229;
     border-color: #C10435;
     border-bottom: solid 2px #C10435 ;
+    font-family:SoberanaTitular;
 }
 
 #cuerpo hr {
@@ -120,13 +121,11 @@ html {
 
 }
 
-.container {
-    width: 200px;
-    height: 120px;
-}
-
-/* resize images */
-.container img {
-    width: 100%;
-    height: auto;
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    font-size: 1.5rem; 
 }
