@@ -4,6 +4,12 @@
     src: url(fonts/SoberanaSans-Regular.otf); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'SoberanaSans'; /*a name to be used later*/
+    src: url(fonts/SoberanaSans-Regular.otf); /*URL to font*/
+}
+
+
 #cuerpo_principal {
 	width: 61em;
 	margin-right: auto;
@@ -61,4 +67,66 @@
     background-color: #dedde0;
     height: 8em;
     background: url(imagenes/pie.jpg) center;
+}
+
+/*
+html {
+    font-size: 62.5%;
+    line-height: 1;
+}
+*/
+ p {
+    font-size: 15px;
+    font-size: 1.5rem;    
+    line-height: 1.333333334;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-family:SoberanaSans;
+}
+
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.three-columns {
+    
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    
+    -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 20px; /* Firefox */
+    column-gap: 20px;
+    
+    -webkit-column-gap: 5rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 5rem; /* Firefox */
+    column-gap: 5rem;
+    
+    -webkit-column-rule: 5px solid rgb(75, 180, 149)  ; /* Chrome, Safari, Opera */
+    -moz-column-rule: 5px solid rgb(75, 180, 149)  ; /* Firefox */
+    column-rule: 5px solid rgb(75, 180, 149)  ;
+    
+    -webkit-column-rule: 0.5rem solid rgb(75, 180, 149)  ; /* Chrome, Safari, Opera */
+    -moz-column-rule: 0.5rem solid rgb(75, 180, 149)  ; /* Firefox */
+    column-rule: 0.5rem solid rgb(75, 180, 149)  ;
+    
+    margin: 20px;
+    margin: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.container {
+    width: 200px;
+    height: 120px;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
 }
