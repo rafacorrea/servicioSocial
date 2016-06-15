@@ -5,14 +5,34 @@
 }
 
 @font-face {
+    font-family: 'SoberanaSans'; /*a name to be used later*/
+    src: url(fonts/SoberanaSans-Bold.otf); /*URL to font*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SoberanaSans'; /*a name to be used later*/
+    src: url(fonts/SoberanaSans-Italic.otf); /*URL to font*/
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SoberanaSans'; /*a name to be used later*/
+    src: url(fonts/SoberanaSans-BoldItalic.otf); /*URL to font*/
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
     font-family: 'SoberanaTitular'; /*a name to be used later*/
     src: url(fonts/SoberanaTitular-Bold.otf); /*URL to font*/
 }
 
 
+
 body {
     background: url(imagenes/bg3.jpg) center;
-    //https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg
+    /* Background pattern from subtlepatterns.com @ http://subtlepatterns.com/gplay/*/
     
 }
 
@@ -44,7 +64,7 @@ body {
     text-justify: auto;
     margin: 1em;
     color:#000000;
-    font: 12;
+    font: 12px;
     font-family:SoberanaSans;
 }
 
@@ -96,12 +116,19 @@ body {
 }
 
 #videoBox {
-    background-color: #eeeeec;
+    
+    background-color: #f3f3f3;
 	padding:2%;
-	width:100%;
-	height:100%;
+	width:80%;
+	height:80%;
 }
 
+#videoBox p {
+    font-size: 12px;
+    color: #888a85;
+    font-family:SoberanaSans;
+    font-style: italic;
+}
 /*
 html {
     font-size: 62.5%;
