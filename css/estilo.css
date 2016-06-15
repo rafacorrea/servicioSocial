@@ -10,11 +10,18 @@
 }
 
 
+body {
+    background: url(imagenes/bg3.jpg) center;
+    //https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg
+    
+}
+
 #cuerpo_principal {
-	width: 61em;
+	width: 75%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
+
 }
 
 #cuerpo {
@@ -23,11 +30,12 @@
     padding-left: 2em;
     padding-right: 2em;
     border-radius: 2em;
-    width: 61em;
+    border-top: 0;
+    width: 100%;
     margin-right: auto;
 	margin-left: auto;
 	margin-top: 0px;
-	background: #f3f3f3;
+	background: #ffffff;
     
 }
 
@@ -57,9 +65,8 @@
 #encabezado{
     padding-right: auto;
     background-color: #dedde0;
-    height: 4em;
-    margin-bottom: 2em;
-    background: url(imagenes/sepban.jpg) center;
+    height: 5em;
+    background: url(imagenes/sepban.jpg);
 }
 
 #pie {
@@ -68,6 +75,31 @@
     background-color: #dedde0;
     height: 8em;
     background: url(imagenes/pie.jpg) center;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+    
+	width: 100%;
+	height: 100%;
+
+}
+
+#videoBox {
+    background-color: #eeeeec;
+	padding:2%;
+	width:100%;
+	height:100%;
 }
 
 /*
@@ -85,6 +117,7 @@ html {
     text-align: justify;
     font-family:SoberanaSans;
 }
+
 
 *  {
     box-sizing: border-box;
@@ -142,8 +175,8 @@ html {
 	overflow: hidden;
 	background-image: url(imagenes/fondo_menu.jpg);
 	margin-top: 0;
-        margin-left:  6em;
-        margin-right: 6em;
+        //margin-left:  6em;
+        //margin-right: 6em;
 }
 
 .menu_principal ul{
