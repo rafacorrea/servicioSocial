@@ -62,7 +62,7 @@ body {
 #cuerpo p {
     text-align: justify;
     text-justify: auto;
-    margin: 1em;
+    /*margin: 1em;*/
     color:#000000;
     font-size: 12px;
     font-family:SoberanaSans;
@@ -160,6 +160,27 @@ body {
     font-family:SoberanaSans;
     font-size: 12px    
 }
+
+
+#infoBoxP {
+    
+    width: 80%;
+    height: auto;
+    background-color:#1AD3E8 ;
+    color: #FFFFFF;
+    font-weight: bold;
+    //opacity: 0.7;
+
+}
+
+#infoBoxP p {
+    padding: 2em;
+    color: #FFFFFF;
+    font-family:SoberanaSans;
+    font-size: 12px    
+    font-weight: bold;
+}
+
 #simpleTitle{
     width: 100%;
     height: auto;
