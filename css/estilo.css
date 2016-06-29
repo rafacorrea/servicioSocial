@@ -200,6 +200,18 @@ body {
     font-family:SoberanaTitular;
     font-size: 24px;
 }
+
+.text-line {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #555753 1px;
+    padding: 1px 5px;
+}
 /*
 html {
     font-size: 62.5%;
@@ -369,7 +381,11 @@ body2 {
 }
 
 
-th, td {padding: 20px; }
+th, td {
+    padding: 20px;
+    font-size: 12px;
+    font-family:SoberanaSans;
+ }
 
 
 
