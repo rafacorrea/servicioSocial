@@ -64,8 +64,14 @@ body {
     text-justify: auto;
     margin: 1em;
     color:#000000;
-    font: 12px;
+    font-size: 12px;
     font-family:SoberanaSans;
+}
+
+#cuerpo li{
+    font-size: 12px;
+    font-family:SoberanaSans;
+    margin-left: 3em;
 }
 
 #cuerpo h1 {
@@ -128,6 +134,30 @@ body {
     color: #888a85;
     font-family:SoberanaSans;
     font-style: italic;
+}
+
+#infoBox {
+    
+    width: 80%;
+    height: auto;
+    background-color:#fffde2 ;
+
+}
+
+#infoBox p {
+    padding: 2em;
+
+    font-family:SoberanaSans;
+    font-size: 12px    
+}
+#simpleTitle{
+    width: 100%;
+    height: auto;
+    background-color:#3465a4;
+    color: #FFFFFF;
+    text-align: center;
+    font-family:SoberanaTitular;
+    font-size: 24px;
 }
 /*
 html {

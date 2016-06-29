@@ -1,0 +1,5 @@
+From: testINEA123@gmail.com 
+To: rafael.correa.3@gmail.com 
+Subject: Hello World 
+
+This email was sent using MSMTP via gmail
