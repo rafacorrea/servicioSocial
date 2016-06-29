@@ -83,6 +83,16 @@ body {
     font-family:SoberanaTitular;
 }
 
+
+#cuerpo sub {
+    padding-right: auto;
+    width: 30%;
+    color: #007229;
+    border-color: #C10435;
+    font-size: 25px;
+    font-family:SoberanaTitular;
+}
+
 #cuerpo hr {
     border:none;
     height:2em;
