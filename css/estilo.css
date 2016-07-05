@@ -83,6 +83,14 @@ body {
     font-family:SoberanaTitular;
 }
 
+#cuerpo h2 {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-family:SoberanaTitular;
+    font-size: 20px;
+    color: #75507b;
+}
 
 #cuerpo sub {
     padding-right: auto;
@@ -169,6 +177,20 @@ body {
     font-size: 12px    
 }
 
+#infoBoxR {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    height: auto;
+    background-color:#a8e5fa ;
+
+}
+
+#infoBoxR p {
+    padding: 2em;
+    font-family:SoberanaSans;
+    font-size: 12px    
+}
 
 #infoBoxP {
     
@@ -200,6 +222,7 @@ body {
     font-family:SoberanaTitular;
     font-size: 24px;
 }
+
 
 .text-line {
     background-color: transparent;
