@@ -20,3 +20,13 @@ function toggle2(showHideDiv, switchTextDiv) {
     	}
 
     }
+    
+function validateEmail() {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (re.test(document.getElementById("qEmail").value)){
+        document.getElementById("resEmail").innerHTML="Correcto".fontcolor("green");
+    }
+    else {
+        document.getElementById("resEmail").innerHTML="Incorrecto".fontcolor("red");
+    }
+}

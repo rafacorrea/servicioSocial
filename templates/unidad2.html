@@ -140,8 +140,12 @@ importar la distancia y a bajo costo.</li>
                 <p>Cuando una p&aacute;gina no se encuentra en la direcci&oacute;n que escribiste o hay alg&uacute;n problema con ella, aparecer&aacute; una pantalla como la siguiente. <br/><br/>
                 <div id="videoBox"><img src="../img/noencontrada.png"></img></div> <br/>
                 <p>En ese caso, revisa si escribiste correctamente la direcci&oacute;n y vuelve a intentarlo en
-                el buscador.</p>
+                el buscador.<br/><br/>
+                Utiliza lo siguiente para buscar algun tema que gustes: <br/>
                 
+                <script>function redirect(){window.open("https://google.com/search?q=" + document.getElementById("search").value)}</script>
+                <center><table><tr><td><input type="text" id="search"/></td><td><button onclick="redirect()">Buscar en Google</button></td></tr></table></center>
+                <br/>
                 <div id="infoBox">
                     <div id="simpleTitle">
                     <strong>&iquest;Sab&iacute;as que...</strong>
@@ -211,6 +215,10 @@ importar la distancia y a bajo costo.</li>
                         <td><b>Tipo de servidor</b>: indica si es un negocio o servicio comercial o institucional y el pa&iacute;s de origen.</td>
                     </tr>
                 </table>
+                <br/>
+                <p>A continuaci&oacute;n, escribe una cuenta de correo que consideres valida y oprimir el bot&oacute;n de 'Revisar'</p>
+                <center><table><tr><td><input type="text" id="qEmail"/></td><td><button onclick="validateEmail()">Revisar</button></td></tr><tr><td>El correo electr&oacute;nico ingresado es:</td><td><div id="resEmail"></div></td></tr></table>
+                <br/>
                 <div id="infoBox">
                     <div id="simpleTitle">
                     <strong>&iquest;Sab&iacute;as que...</strong>
@@ -291,6 +299,15 @@ importar la distancia y a bajo costo.</li>
                     En la <font color="orange">Bandeja de entrada</font> encontrar&aacute;s los correos que hayas recibido; por lo general, los correos le&iacute;dos se distinguen de los que a&uacute;n no has le&iacute;do por estar resaltados con un color diferente.<br/>
                 </p>
                 <div id="videoBox"><img src="../img/verCorreo.png"></img></div> <br/>    
+                
+                
+                    <table>
+                        <tr><td>En la imagen anterior, &iquest;Cuantos correos se han recibido?</td>
+                        <td><select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></td></tr>
+                        <tr><td>&iquest;Cuantos correos est&aacute;n marcados como le&iacute;dos?</td>
+                        <td><select><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></td></tr>
+                    </table>
+                    
                 <p>
                     Para responder un correo, luego de haberlo abierto:                
                 </p>
@@ -298,6 +315,9 @@ importar la distancia y a bajo costo.</li>
                     <li>Oprime el bot&oacute;n <font color="orange">Responder</font>, se abrir&aacute; una ventana similar a la que usaste para enviar un correo, s&oacute;lo que en &eacute;sta autom&aacute;ticamente se copia la direcci&oacute;n de correo electr&oacute;nico de la persona a la que escribir&aacute;s.</li>
                     <li>Tambi&eacute;n puedes <font color="orange">enviar</font> un correo. Esta opci&oacute;n se utiliza, por ejemplo, para reenviar a alguien un correo que has recibido. Para usar esta opci&oacute;n debes tener abierto en la pantalla el correo que deseas reenviar y oprimir el bot&oacute;n del rat&oacute;n en la opci&oacute;n <font color="orange">Reenviar</font>.</li>
                 </ol><br/><br/>
+                
+                <div id="videoBox"><img src="../img/responder.png"></img></div> <br/>    
+                
                 <div id="infoBoxR">
                     <div id="simpleTitle">
                     <strong>Recuerda que...</strong>
@@ -313,6 +333,8 @@ importar la distancia y a bajo costo.</li>
                     <li>Oprime el bot&oacute;n <font color="orange">Adjuntar</font>, selecciona luego <font color="orange">Archivo</font> y oprime el bot&oacute;n <font color="orange">Examinar</font>;  se abrir&aacute; una ventana desde la cual puedes buscar tu archivo y seleccionarlo. Luego haz clic en la opci&oacute;n <font color="orange">Adjuntar</font>. Si deseas adjuntar otro archivo, selecciona <font color="orange">Agregar m&aacute;s archivos</font> y <font color="orange">luego Adjuntar</font>.</li>
                     <li>Selecciona la opci&oacute;n <font color="orange">Adjuntar</font>, se abrir&aacute; una ventana en la que podr&aacute;s elegir el archivo que deseas enviar, selecciona el archivo y oprime el bot&oacute;n <font color="orange">Abrir</font>, autom&aacute;ticamente tu archivo se habr&aacute; adjuntado.</li>
                 </ol><br/>
+                
+                <div id="videoBox"><center><img src="../img/adjuntar.png"></img></center></div> <br/>    
                 <p>
                     Tu archivo ya est&aacute; adjuntado al correo que est&aacute;s escribiendo, &iexcl;ya puedes enviarlo! Observa que en la pantalla en la que est&aacute;s escribiendo tu correo aparece el archivo que acabas de adjuntar. Si te arrepientes, oprime la opci&oacute;n <font color="orange">Eliminar</font> o <font color="orange">Quitar</font>. Env&iacute;a tu correo como lo haces normalmente. <br/>
                     Para <font color="orange">leer un archivo</font> que te hayan adjuntado, oprime el bot&oacute;n del rat&oacute;n sobre el nombre del archivo (generalmente est&aacute; en otro color).
@@ -349,7 +371,7 @@ importar la distancia y a bajo costo.</li>
                 </ol> <br/  >
                 
                 <p>
-                En este tipo de “charlas” puedes platicar con una sola persona o bien incluir a dos o tres personas.<br/>
+                En este tipo de "charlas" puedes platicar con una sola persona o bien incluir a dos o tres personas.<br/>
                 
                 Tambi&eacute;n puedes encontrar salones de charla p&uacute;blicos en internet, los cuales no necesariamente deben tener un tema en com&uacute;n; s&oacute;lo te recomendamos que leas antes las condiciones de uso.<br/> 
                 
@@ -388,8 +410,24 @@ importar la distancia y a bajo costo.</li>
                     <li><b>Clave o password</b>: diciembre_2014_G</li>
                     <li><b>Alias</b>: Chayito</li>
                 </ul><br/>
+                
+                <p>Ser&aacute; muy parecido a lo siguiente:<br/>
+                <table>
+                    <tr><td>Nombre:</td> 
+                        <td><input type="text"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Usuario o Alias:</td>
+                        <td><input type="text"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password"></input></td>
+                    </tr>
+                </table>
+                </p>
                 <p>
-                La forma de participar es la siguiente:
+                La forma de participar en el foro es la siguiente:
                 </p>
                 <ol>
                     <li>Alguien escribe una pregunta o comentario sobre alg&uacute;n tema que eligi&oacute; previamente.</li>
@@ -399,7 +437,8 @@ importar la distancia y a bajo costo.</li>
                     En internet hay disponibles muchos foros sobre una amplia variedad de temas. En la mayor&iacute;a de ellos debes registrarte para poder participar; pero no te preocupes, esto es muy similar a los pasos que seguiste para obtener un correo electr&oacute;nico. S&oacute;lo recuerda tener cuidado al ingresar tus datos personales.
                 </p>
                 
-                
+                <div id="videoBox"><center><img src="../img/foro.png"></img></center></div> <br/>    
+                <div id="videoBox"><center><img src="../img/foro2.png"></img></center></div> <br/>    
                 <div id="infoBoxR">
                     <div id="simpleTitle">
                     <strong>Recuerda que...</strong>
@@ -432,7 +471,8 @@ importar la distancia y a bajo costo.</li>
             Video resumiendo como utilizar un buscador.
         </p>
       </div>
-  
+      <br/><br/>
+        <h2><a href="unidad3.html">IR A LA UNIDAD 3</a></h2><br/>
     </div>
     
 </div>
