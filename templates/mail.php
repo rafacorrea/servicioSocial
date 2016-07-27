@@ -44,6 +44,16 @@ else
 {
     $dd5.='No respondio';
 }
+
+if(!empty($_POST['om1']))
+{
+    $dd5 = $_POST['om1'];
+}
+else
+{
+    $dd5.='No respondio';
+}
+
   if (isset($_REQUEST['nombre']) && isset($_REQUEST['apellidoP']) && isset($_REQUEST['email']) && isset($_REQUEST['apellidoM']) && isset($_REQUEST['zona']) && isset($_REQUEST['to']))  {
  
 $dato1 = $_REQUEST['dato1'];
@@ -77,6 +87,8 @@ $dato28 = $_REQUEST['dato28'];
 $dato29 = $_REQUEST['dato29'];
 $dato30 = $_REQUEST['dato30'];
 $dato31 = $_REQUEST['dato31'];
+$dato32 = $_REQUEST['dato31'];
+
 
 $nombre = $_REQUEST['nombre'];
 $apellidoP = $_REQUEST['apellidoP'];
@@ -123,57 +135,43 @@ $to = $_REQUEST['to'];
         
         <body2>
 
+            <div class="menu_principal">
+              <div class="centrado">
+                <ul>
+                  <li><a href="../index.html"><span class="letra_menu">Inicio</span></a>
+                   <!-- <ul>
+                      <li class="letra_menu"><a href="inicio.php">Inicio Plazas Comunitarias</a></li>
+                      <li class="letra_menu"><a href="http://df.inea.gob.mx/">Inicio Inea DF</a></li>                                      
+                    </ul>-->
+                  </li>
+                  <li><a href="../index.html"><span class="letra_menu">Unidades</span></a>
+	            <ul>
+                    <li><a href="unidad1.html"><span class="letra_menu">Unidad1</span></a></li>
+                  <li><a href="unidad2.html"><span class="letra_menu">Unidad2</span></a></li>
+            	    <li><a href="unidad3.html"><span class="letra_menu">Unidad3</span></a></li>
+                  <li><a href="unidad4.html"><span class="letra_menu">Unidad4</span></a></li>                                     
+                            <li><a href="mail.php"><span class="letra_menu">Cuestionario</span></a></li>
+                    </ul>
+	          </li>
 
-          <div class="menu_principal">
-            <div class="centrado">
-              <ul>
-                <li>
-                  <a href="../index.html">
-                    <span class="letra_menu">Inicio</span>
-                  </a>
-                  <!-- <ul>
-                       <li class="letra_menu"><a href="inicio.php">Inicio Plazas Comunitarias</a></li>
-                       <li class="letra_menu"><a href="http://df.inea.gob.mx/">Inicio Inea DF</a></li>
-                     </ul>-->
-                </li>
-                <li>
-                  <a href="unidad1.html">
-                    <span class="letra_menu">Unidad 1</span>
-                  </a>
-                  <ul></ul>
-                </li>
-
-                <li>
-                  <a href="unidad2.html">
-                    <span class="letra_menu">Unidad 2</span>
-                  </a>
-                  <ul></ul>
-                </li>
-                <li>
-                  <a href="unidad3.html">
-                    <span class="letra_menu">Unidad 3</span>
-                  </a>
-                  <ul></ul>
-                </li>
-                <li>
-                  <a href="unidad4.html">
-                    <span class="letra_menu">Unidad 4</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mail.php">
-                    <span class="letra_menu">Cuestionario</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://cdmx.inea.gob.mx/portal_plazas/Docs/AprovechoInternet.pdf" download="AprovechoInternet.pdf">
-                    <span class="letra_menu">Descarga módulo PDF</span>
-                  </a>
-                </li>
-              </ul>
+                  <li><a href="http://cdmx.inea.gob.mx/portal_plazas/ClasificacionPlazas.php"><span class="letra_menu">Clasificaci&oacute;n</span></a>
+                    <ul>
+                      <li class="letra_menu"><a href="http://cdmx.inea.gob.mx/portal_plazas/ClasificacionPlazas.php">Clasificaci&oacute;n Plazas Comunitarias</a></li>
+                      <li class="letra_menu"><a href="http://cdmx.inea.gob.mx/portal_plazas/PlazaInstitucional.php">Plaza Institucional</a></li>
+                      <li class="letra_menu"><a href="http://cdmx.inea.gob.mx/portal_plazas/PlazaColaboracion.php">Plaza de Colaboraci&oacute;n</a></li>
+                      <li class="letra_menu"><a href="http://cdmx.inea.gob.mx/portal_plazas/pcDesarrolloyMovil.php">Plaza de Desarrollo y M&oacute;vil</a></li>                                                
+                    </ul>
+                  </li>
+                  <li><a href="http://cdmx.inea.gob.mx/portal_plazas/EspecificacionesInstReuPlazas.php"><span class="letra_menu">Especificaciones</span></a>
+                    <ul>
+                      <li class="letra_menu"><a href="http://cdmx.inea.gob.mx/portal_plazas/EspecificacionesInstReuPlazas.php">Especific. Instal. Reubica. Plazas</a></li>                                          
+                    </ul>
+                  </li>
+                  <li><a href="http://cdmx.inea.gob.mx/portal_plazas/Utilerias.php"><span class="letra_menu">Utilerias</span></a></li>
+                  <li><a href="http://cdmx.inea.gob.mx/portal_plazas/Procedimientos.php"><span class="letra_menu">Procedimientos</span></a></li>      
+	          	  </ul>
+              </div>
             </div>
-          </div>
-          
           </body2>
   
   
@@ -224,7 +222,7 @@ $to = $_REQUEST['to'];
 			<li>&iquest;Qu&eacute; crees que le hace falta a la unidad 1?<input name="dato10" type="text" class="text-line" /></li><br />
 			
   			<h2>Unidad 2</h2>
-				<p>Abre la p&aacute;gina de tu buscador (por ejemplo, http://www.google.com).</p>
+				<li>Para realizar búsquedas en internet, se utilizan <input name="dato11" type="text" class="text-line" />, es decir, programas especializados que por medio de palabras clave muestran la información que encuentran sobre cada tema.</li><br />
 				<li>Realiza las siguientes b&uacute;squedas y comenta el contenido de alguna p&aacute;gina que
 	hayas encontrado sobre cada tema:<br/><br/>
 					<ul><li>fiestas+mexicanas:
@@ -233,10 +231,17 @@ $to = $_REQUEST['to'];
 					<input name="dato12" type="text" class="text-line" /></li><br />
 					</ul>
 				</li>
-				<li>Obt&eacute;n una cuenta de correo electr&oacute;nico (si ya tienes una, saca otra para prac-
-ticar). &iquest;Cu&aacute;l es tu direcci&oacute;n de correo electr&oacute;nico?<input name="dato13" type="text" class="text-line" /><br/></li>
+				<li>Obt&eacute;n una cuenta de correo electr&oacute;nico (si ya tienes una, saca otra para practicar). &iquest;Cu&aacute;l es tu direcci&oacute;n de correo electr&oacute;nico?<input name="dato13" type="text" class="text-line" /><br/></li>
 				<li>Te parece &uacute;til tener una cuenta de correo electr&oacute;nico?
 				<select name="dd1"><option value="Si">S&iacute;</option><option value="No">No</option></select>
+				</li>
+
+				<li>  
+					&iquest;Cu&aacute;l de los siguientes es correcto? <br />
+					<input type="radio" name="om1" value="pmario@hotmail.com">pmario-hotmail.com<br>
+					<input type="radio" name="om1" value="pmario@hotmail.com">pmario@hotmail.com<br>
+					<input type="radio" name="om1" value="pmario@hotmail.com">pmario.hotmail.com<br>
+					<input type="radio" name="om1" value="pmario@hotmail.com">pmario@hotmail<br>
 				</li>
 
 				<li>
